@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>National Parks App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Find Parks in Your State</h1>
+  <form id="search_form">
+    <label for="search_state">Pick Your State:</label>
+    <select name="search_state" id="search_state">
+      <option value="MD">Maryland</option>  
+      <option value="NC">North Carolina</option>  
+      <option value="NY">New York</option>  
+    </select>
+
+    <label for="max_results">Maximum Results:</label>
+    <input type="number" name="max_results" id="max_results" value="10">
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="error_message"></p>
+  <section id="results" class="hidden">
+    <h2>Results:</h2>
+    <ul id="display_items"></ul>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
